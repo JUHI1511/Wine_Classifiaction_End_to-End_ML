@@ -1,0 +1,8 @@
+Numpy
+Pandas
+Matplotlib
+XGBoost
+Flask
+Seaborn
+gunicorn
+sklearn
