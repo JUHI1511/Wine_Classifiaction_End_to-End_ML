@@ -1,0 +1,100 @@
+<!-- This is GUI for Heart disease Detection Application Using Machine Learning Classifer -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+
+  
+</head>
+
+<body>
+  <h1> Predict Wine Types</h1>
+
+
+  <div class="login">
+
+    <!-- Get input for predict the  heart disease -->
+    <center>
+      <br>
+      <br>
+      <br>
+      <br>
+      <form action="{{ url_for('predict')}}" method="post">
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+        <h1>Enter the value of wine features >>></h1>
+
+        <input type="text" name="fixed acidity" required="required" />
+        <input type="text" name="volatile acidity" required="required" />
+        <input type="text" name="citric acid" required="required" />
+        <input type="text" name="residual sugar" required="required" />
+        <input type="text" name="chlorides" required="required" />
+
+
+
+        <br>
+        <input type="text" name="free sulfur dioxide" required="required" />
+        <input type="text" name="total sulfur dioxide" required="required" />
+        <input type="text" name="density" required="required" />
+        <input type="text" name="pH" required="required" />
+        <input type="text" name="sulphates" required="required" />
+
+
+
+        <br>
+        <input type="text" name="alcohol" required="required" />
+        <input type="text" name="quality" required="required" />
+
+
+
+
+
+
+        <!-- Show button -->
+      
+            <button type="submit" class="btn btn-primary btn-block btn-large"><strong>Predict
+                </strong></button></a>
+      
+
+      </form>
+    </center>
+
+    <!-- Show predicted output using ML model -->
+    <div>
+      <center>
+        <h1>{{ prediction_text }}</h1>
+      </center>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
